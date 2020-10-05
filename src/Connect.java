@@ -20,7 +20,7 @@ public class Connect {
         sql = "SELECT * FROM shoppers";
 
         ResultSet resultSet = statement.executeQuery(sql);
-        try(FileWriter writer = new FileWriter("notes3.txt", false)) {
+        try(FileWriter writer = new FileWriter("notes34.html", false)) {
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
                 String name = resultSet.getString("name");
